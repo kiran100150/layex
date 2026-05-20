@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm} % For theorem environments like theorem, definition, lemma
+\usepackage[left=3.2cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{ge
+ometry}
+% To label subsections with Theorem, Definition, Lemma and Corollary with numbering as per
+chapter number
+\newtheorem{theorem}{Theorem}[chapter] % Number theorems by chapter
+\newtheorem{lemma}[theorem]{Lemma} % For numbering Lemma with continuity of
+theorem " [theorem]{Lemma}" is used
+\newtheorem{corollary}[theorem]{Corollary} % Number Corollary with
+continuity of theorem
+\theoremstyle{definition} % To change style of text used in definition to nonitalic form
+\newtheorem{definition}[theorem]{Definition}
+\newcounter{chapter}
+\setcounter{chapter}{6}
+\begin{document}
+\Large
+\textbf{Chapter-06}\hspace{1cm}\textbf{Numbered Theorems, Definitions,
+Corollaries and Lemmas}
+\section*{Theorem}
+\begin{theorem}
+If \( a \) and \( b \) are odd integers, then their product \( a
+\cdot b \) is also odd.
+\end{theorem}
+\section*{Definition}
+\begin{definition}
+A function \( f \colon X \to Y \) is called injective (or oneto-one) if for all \( x_1, x_2 \in X \), \( f(x_1) = f(x_2) \)
+implies \( x_1 = x_2 \).
+\end{definition}
+\section*{Lemma}
+\begin{lemma}
+Let \( A \) and \( B \) be sets. If \( A \subseteq B \) and \( B
+\subseteq C \), then \( A \subseteq C \).
+\end{lemma}
+\section*{Corollary}
+\begin{corollary}
+If \( A \subseteq B \) and \( A = B \), then \( B \subseteq A
+\).
+\end{corollary}
+\end{document}
