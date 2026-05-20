@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} % For advanced math typesetting
+\usepackage{amssymb} % For additional math symbols
+\usepackage[left=3.2cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{ge
+ometry}
+% Define a chapter counter (since article class doesn't support
+chapters)
+\newcounter{chapter}
+\setcounter{chapter}{5}% Set the current chapter number
+\numberwithin{equation}{chapter} % Link equation numbering to the chapter
+counter
+\begin{document}
+\Large
+\textbf{Chapter-05}\hspace{1cm}\textbf{MATHEMATICAL EQUATIONS}
+\section*{Solving a Quadratic Equation} %* removes numbering for section
+The quadratic formula is given by:
+\begin{equation}
+ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+ubstituting the values a = 1, b = 2, and c = -8 into the formula:
+\begin{equation}
+ x = \frac{-2 \pm \sqrt{2^2 - 4(1)(-8)}}{2 \cdot 1}
+\end{equation}
+Simplifying further:
+\begin{equation}
+ x = \frac{-2 \pm \sqrt{4 + 32}}{2}
+\end{equation}
+To get final answer:
+\begin{equation}
+x= -1 \pm 3
+\end{equation}
+\section*{Mathematical Derivation}
+\begin{align}
+\varphi_\sigma^\lambda A_t &= \sum_{\pi \in C_t}
+\operatorname{sgn}(\pi)
+\varphi_\sigma^\lambda \varphi_\pi^\lambda \\
+&= \sum_{\tau \in C_{\sigma t}} \operatorname{sgn} (\sigma^{-1}
+\tau \sigma)
+\varphi_\sigma^ \lambda \varphi_ {\sigma^{-1} \tau
+\sigma}^\lambda\\
+&= A_{\sigma t} \varphi_\sigma^\lambda
+\end{align}
+% Dont give any line of gap in the above after \begin{align} ,\\ and \end{align}
+\end{document}
